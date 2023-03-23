@@ -1,0 +1,24 @@
+body{
+background-color: pink
+
+p{
+    font family: Arial, Helvetica, sans-serif ; 
+    font-size: 18px;
+    color:
+
+}
+#pic1{
+    position: absolute; top: 75px; left: 450px
+    background-color: darkgrey
+    padding: 20px;
+    border-style:groove;
+    border-width: 5px;
+    border-color: red 
+
+}
+#bkg{
+    background-color: aqua;
+    position:absolute; top: 5px;
+    height:750;
+    width: 950px;
+   
