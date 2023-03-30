@@ -2,6 +2,8 @@ body {
   background-color: rgb(2, 13, 14);
   background-image:url(backgroundpicture.jpeg);
   background-repeat:repeat;
+  margin-right: 25%;
+  margin-left: 2%;
 
 }
 h4 {
