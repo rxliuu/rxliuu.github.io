@@ -18,8 +18,8 @@ input[type=text]{
 }
 img{
     float:right;
-    width:400px;
-    padding-top: 50px;
+    width:300px;
+    padding-top: 55px;
 }
   
 
@@ -54,8 +54,16 @@ h2{
     word-break:break-all;
     margin:0,auto;
     text-align:center;
+} 
+.end img{
+    float:left;
+    width:300px;
+    padding-top: 55px;
+    position: relative;
+    left:32%;
+    
 }
-   
+
 tw-story{
   width:1500px;
   margin:0,auto;
@@ -91,7 +99,7 @@ tw-link:visited{
 
 [[About the Game]]
 
-[[Credits]]
+[[Game Credits|Credits]]
 
 &lt;/div&gt;
 
@@ -109,7 +117,7 @@ tw-link:visited{
 
 &lt;/div&gt;
 
-&lt;img src=&quot;https://htmlcolorcodes.com/assets/images/colors/light-green-color-solid-background-1920x1080.png&quot;&gt;
+&lt;img src=&quot;coffee.jpg&quot;&gt;
 </tw-passagedata><tw-passagedata pid="3" name="About the Game" tags="" position="725,400" size="100,100">&lt;div class=&quot;relax&quot;&gt;
 
 
@@ -127,23 +135,23 @@ This is a short horror experience that themed around hacking. If this makes you 
 
 [[&lt; Back|first-passage]]
 
-&lt;img src=&quot;first.jpg&quot;&gt;
+
 &lt;/div&gt;
 
-&lt;img src=&quot;first.jpg&quot;&gt;
+&lt;img src=&quot;bird.png&quot;&gt;
 
 </tw-passagedata><tw-passagedata pid="4" name="Credits" tags="" position="475,400" size="100,100">&lt;div class=&quot;relax&quot;&gt;
 
 
 
-####Creator Info:
-Ruxin Liu, from University of North Carolina at Chapel Hill.
-This is the final project for my class COMM150. 
+####Main Game
+Writing,coding, &amp;design: Ruxin Liu 
+This game was made in Twine, using the Harlowe format (). 
 
+####Audio:
 
+####Images:
 
-####CREDITS:
-This is a short horror experience that themed around hacking. If this makes you feel uncomfortable, please proceed with caution. This game doesn’t contain any jumpscare, disturbing images, and intense sounds. 
 
 
 
@@ -151,7 +159,9 @@ This is a short horror experience that themed around hacking. If this makes you 
 [[&lt; Back|first-passage]]
 
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="q2" tags="left" position="600,525" size="100,100">&lt;div class=&quot;relax&quot;&gt;
+&lt;/div&gt;
+
+&lt;img src=&quot;book.png&quot;&gt;</tw-passagedata><tw-passagedata pid="5" name="q2" tags="left" position="600,525" size="100,100">&lt;div class=&quot;relax&quot;&gt;
 
 ###What is your favorite way to relax?
 
@@ -165,8 +175,9 @@ This is a short horror experience that themed around hacking. If this makes you 
 &lt;/div&gt;
 
 
+&lt;img src=&quot;bed.jpg&quot;&gt;
 
-&lt;img src=&quot;https://htmlcolorcodes.com/assets/images/colors/baby-blue-color-solid-background-1920x1080.png&quot;&gt;
+
 </tw-passagedata><tw-passagedata pid="6" name="q3" tags="" position="600,650" size="100,100">
 &lt;div class=&quot;relax&quot;&gt;
 
@@ -178,7 +189,9 @@ This is a short horror experience that themed around hacking. If this makes you 
 [[Drive in movie theater|q4]] 
 
 &lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="7" name="q4" tags="" position="600,775" size="100,100">&lt;div class=&quot;relax&quot;&gt;
+
+&lt;img src=&quot;flower.jpg&quot;&gt;</tw-passagedata><tw-passagedata pid="7" name="q4" tags="" position="600,775" size="100,100">&lt;div class=&quot;relax&quot;&gt;
+
 
 ###Do you often feel lonely?
 
@@ -198,7 +211,9 @@ for(let i=0;i&lt;aList.length;i++){
     })
 }
 
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="8" name="honest" tags="" position="750,900" size="100,100">&lt;div class=&quot;relax&quot;&gt;
+&lt;/script&gt;
+
+&lt;img src=&quot;glass.jpg&quot;&gt;</tw-passagedata><tw-passagedata pid="8" name="honest" tags="" position="750,900" size="100,100">&lt;div class=&quot;relax&quot;&gt;
 
 ###Are you being honest?
 
@@ -214,7 +229,9 @@ for(let i=0;i&lt;aList.length;i++){
 [[Not really|lie]]
 
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="Metoo" tags="" position="600,1150" size="100,100">&lt;div style=&quot;left:55px &quot;&gt;
+&lt;/div&gt;
+
+&lt;img src=&quot;balloon.jpg&quot;&gt;</tw-passagedata><tw-passagedata pid="10" name="Metoo" tags="" position="600,1150" size="100,100">&lt;div style=&quot;left:55px &quot;&gt;
 
 
 
@@ -242,7 +259,8 @@ for(let i=0;i&lt;aList.length;i++){
 [[Maybe|q8]]
 
 &lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="13" name="statement" tags="" position="425,1425" size="100,100">&lt;div style=&quot;margin-bottom:2em&quot;&gt;
+
+&lt;img src=&quot;couple.jpg&quot;&gt;</tw-passagedata><tw-passagedata pid="13" name="statement" tags="" position="425,1425" size="100,100">&lt;div style=&quot;margin-bottom:2em&quot;&gt;
 
 
 
@@ -250,7 +268,7 @@ for(let i=0;i&lt;aList.length;i++){
 (set: $typewriterText to &quot;For quality control purposes,
 
 Please select SINGLE for the following question.&quot;)
-##(display: &quot;Typewriter&quot;) (live: 10s)[(go-to: &quot;question&quot;)]
+##(display: &quot;Typewriter&quot;) (live: 8s)[(go-to: &quot;question&quot;)]
 
 
 
@@ -391,7 +409,15 @@ inp.addEventListener(&#39;keydown&#39;,function(){
 &lt;/div&gt;
 &lt;/div&gt;
 
-</tw-passagedata><tw-passagedata pid="23" name="open" tags="" position="250,2425" size="100,100">Music
+</tw-passagedata><tw-passagedata pid="23" name="open" tags="" position="250,2425" size="100,100">&lt;div class=&quot;end&quot;&gt;
+Music
+
+
+
+&lt;img src=&quot;loading.png&quot;&gt;
+
+&lt;/div&gt;
+
 
 &lt;audio src=&quot;file:///Users/vanessaliu/Desktop/MUSIC/Michael%20Nau%20-%20On%20Ice%20myfreemp3.vip%20.mp3&quot;&gt;&lt;/audio&gt;</tw-passagedata><tw-passagedata pid="24" name="lie" tags="" position="475,1150" size="100,100">&lt;div style=&quot;left:40px &quot;&gt;
 
@@ -436,7 +462,8 @@ inp.addEventListener(&#39;keydown&#39;,function(){
 
 
 &lt;/div&gt;
-</tw-passagedata></tw-storydata>
+
+&lt;img src=&quot;give.jpg&quot;&gt;</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
