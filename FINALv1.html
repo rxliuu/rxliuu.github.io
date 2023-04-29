@@ -76,12 +76,14 @@ tw-link:visited{
   color:rosybrown;
 }
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="left-align" color="orange"></tw-tag><tw-tag name="left" color="red"></tw-tag><tw-tag name="middle" color="yellow"></tw-tag><tw-passagedata pid="1" name="first-passage" tags="middle" position="600,200" size="100,100">&lt;div class=&quot;center&quot;&gt;
+.visited{
+    color: gray;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="left-align" color="orange"></tw-tag><tw-tag name="left" color="red"></tw-tag><tw-tag name="middle" color="yellow"></tw-tag><tw-passagedata pid="1" name="first-passage" tags="middle" position="600,200" size="100,100">&lt;div class=&quot;center&quot;&gt;
 
 
 
 ##WHO WILL YOU FALL IN LOVE WITH
-*//Do you ever wonder &quot;who will be the right one?&quot;, find out the answer by doing this quiz//*
+*//Do you ever wonder &quot;who will be the right one&quot;, find out the answer by doing this quiz//*
 
 
 
@@ -108,13 +110,48 @@ tw-link:visited{
 &lt;/div&gt;
 
 &lt;img src=&quot;https://htmlcolorcodes.com/assets/images/colors/light-green-color-solid-background-1920x1080.png&quot;&gt;
-</tw-passagedata><tw-passagedata pid="3" name="About the Game" tags="" position="725,400" size="100,100">
-Introduction:
+</tw-passagedata><tw-passagedata pid="3" name="About the Game" tags="" position="725,400" size="100,100">&lt;div class=&quot;relax&quot;&gt;
 
-Creator: </tw-passagedata><tw-passagedata pid="4" name="Credits" tags="" position="475,400" size="100,100">{
- (live: 7s)[text]
-}
-</tw-passagedata><tw-passagedata pid="5" name="q2" tags="left" position="600,525" size="100,100">&lt;div class=&quot;relax&quot;&gt;
+
+
+####ABOUT: 
+This is a love &amp; relationship quiz? Keep in mind, be honest with your answers. As you progress, you will gradually realize that something isn’t right…
+
+
+
+####CONTENT WARNING:
+This is a short horror experience that themed around hacking. If this makes you feel uncomfortable, please proceed with caution. This game doesn’t contain any jumpscare, disturbing images, and intense sounds. 
+
+
+
+
+[[&lt; Back|first-passage]]
+
+&lt;img src=&quot;first.jpg&quot;&gt;
+&lt;/div&gt;
+
+&lt;img src=&quot;first.jpg&quot;&gt;
+
+</tw-passagedata><tw-passagedata pid="4" name="Credits" tags="" position="475,400" size="100,100">&lt;div class=&quot;relax&quot;&gt;
+
+
+
+####Creator Info:
+Ruxin Liu, from University of North Carolina at Chapel Hill.
+This is the final project for my class COMM150. 
+
+
+
+####CREDITS:
+This is a short horror experience that themed around hacking. If this makes you feel uncomfortable, please proceed with caution. This game doesn’t contain any jumpscare, disturbing images, and intense sounds. 
+
+
+
+
+[[&lt; Back|first-passage]]
+
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="q2" tags="left" position="600,525" size="100,100">&lt;div class=&quot;relax&quot;&gt;
 
 ###What is your favorite way to relax?
 
@@ -151,7 +188,17 @@ Creator: </tw-passagedata><tw-passagedata pid="4" name="Credits" tags="" positio
 [[Frequently|q6]]
 
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="honest" tags="" position="750,900" size="100,100">&lt;div class=&quot;relax&quot;&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+var aList = document.querySelectorAll(&#39;tw-link&#39;)
+for(let i=0;i&lt;aList.length;i++){
+    aList[i].addEventListener(&#39;click&#39;,function(){
+        aList[i].style.color = &#39;pink&#39;
+    })
+}
+
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="8" name="honest" tags="" position="750,900" size="100,100">&lt;div class=&quot;relax&quot;&gt;
 
 ###Are you being honest?
 
@@ -251,25 +298,38 @@ Please select SINGLE for the following question.&quot;)
 &lt;/div&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="18" name="q9" tags="" position="350,1925" size="100,100">&lt;div class=&quot;center&quot;&gt;
 
-###I love you so much.
 
+
+###I love you so much.
 &lt;div class=&quot;agree&quot;&gt;
-[[Agree]][[Agree]][[Agree]][[Agree]][[Agree]][[Agree]][[Agree]]
-[[Agree]][[Agree]][[Agree]][[Agree]][[Agree]][[Agree]][[Agree]]
-[[Agree]][[Agree]][[Agree]][[Agree]][[Agree]][[Agree]][[Agree]]
-[[Agree]][[Agree]][[Agree]][[Agree]][[Agree]][[Agree]][[Agree]]
+[[Agree]]  [[Agree]]  [[Agree]]  [[Agree]]  [[Agree]]  [[Agree]]  [[Agree]]
+[[Agree]]  [[Agree]]  [[Agree]]  [[Agree]]  [[Agree]]  [[Agree]]  [[Agree]]
+[[Agree]]  [[Agree]]  [[Agree]]  [[Agree]]  [[Agree]]  [[Agree]]  [[Agree]]
+[[Agree]]  [[Agree]]  [[Agree]]  [[Agree]]  [[Agree]]  [[Agree]]  [[Agree]]
+[[Agree]]  [[Agree]]  [[Agree]]  [[Agree]]  [[Agree]]  [[Agree]]  [[Agree]]
+
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;script&gt;
 var agreeBox = document.getElementsByClassName(&#39;agree&#39;)[0]
-agreeBox.addEventListener(&#39;click&#39;,function(){
-    alert(1)
-})
+var agreeList = agreeBox.querySelectorAll(&#39;tw-link&#39;)
+let _index = -1
+    for(let i=0;i&lt;agreeList.length;i++){
+        agreeList[i].style.opacity=&#39;0&#39;
+        console.log(agreeList[i].style)
+        _index++
+        setTimeout(() =&gt; {
+            agreeList[i].style.opacity=&#39;1&#39;
+        }, _index * 100);
+    }
+
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="19" name="Agree" tags="" position="350,2050" size="100,100">&lt;div class=&quot;center&quot;&gt;
 
+
+
 ###Tell me you love me too
-&lt;input type=&quot;text&quot; name=&quot;&quot; id=&quot;inp&quot;&gt;
+&lt;input type=&quot;text&quot; name=&quot;&quot; id=&quot;inp&quot; maxlength=&quot;1&quot;&gt;
 
 
 [[&gt;]]
@@ -296,14 +356,16 @@ inp.addEventListener(&#39;keydown&#39;,function(){
                 inpval2+=text[i]
         }
         inpval = inpval2
+        
     }
     inp.value = inpval
-    console.log(inp.value)
+    
 })
 &lt;/script&gt;
 </tw-passagedata><tw-passagedata pid="20" name="q12" tags="" position="250,2300" size="100,100">&lt;div class=&quot;center&quot;&gt;
 
-###I&#39;m so glad to hear that.
+
+
 ###Now [[open]] the door.
 
 &lt;/div&gt;
